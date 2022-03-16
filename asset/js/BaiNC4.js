@@ -27,29 +27,34 @@ formBNC4.onsubmit = () => {
       inputBNC4[i].classList.remove("is-invalid");
     }
   }
+  //Lấy giá trị mặc định của tọa độ trường học
   if (inputSchool[0].value === undefined) {
     xSchool = 0;
   }
   if (inputSchool[1].value === undefined) {
     ySchool = 0;
   }
+  // Tính khoảng cách từ sv1 đến trường học
   const kcSv1 = Math.sqrt(
     Math.abs(xSv1 ** 2 - xSchool ** 2 + (ySv1 ** 2 - ySchool ** 2))
   );
+  // Tính khoảng cách từ sv2 đến trường học
   const kcSv2 = Math.sqrt(
     Math.abs(xSv2 ** 2 - xSchool ** 2 + (ySv2 ** 2 - ySchool ** 2))
   );
+  // Tính khoảng cách từ sv3 đến trường học
   const kcSv3 = Math.sqrt(
     Math.abs(xSv3 ** 2 - xSchool ** 2 + (ySv3 ** 2 - ySchool ** 2))
   );
-
   let svMax = "";
+  // Sắp xếp khoảng cách theo thứ tự tăng dần
   const arrKc = [kcSv1, kcSv2, kcSv3];
   arrKc.sort(function (a, b) {
     if (a > b) return 1;
     if (a < b) return -1;
     return 0;
   });
+  // Lấy ra sv có khoảng cách xa nhất
   if (arrKc[2] === kcSv1) {
     svMax = "Sinh viên 1";
   } else if (arrKc[2] === kcSv2) {
