@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC21-Bài tập JS 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="Bai1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Bai1"
+            type="button"
+            role="tab"
+            aria-controls="Bai1"
+            aria-selected="true"
+          >
+            Bai1
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="Bai2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Bai2"
+            type="button"
+            role="tab"
+            aria-controls="Bai2"
+            aria-selected="false"
+          >
+            Bai2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="Bai3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Bai3"
+            type="button"
+            role="tab"
+            aria-controls="Bai3"
+            aria-selected="false"
+          >
+            Bai3
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="Bai4-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Bai4"
+            type="button"
+            role="tab"
+            aria-controls="Bai4"
+            aria-selected="false"
+          >
+            Bai4
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="BaiNC1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#BaiNC1"
+            type="button"
+            role="tab"
+            aria-controls="BaiNC1"
+            aria-selected="false"
+          >
+            BaiNC1
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="BaiNC2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#BaiNC2"
+            type="button"
+            role="tab"
+            aria-controls="BaiNC2"
+            aria-selected="false"
+          >
+            BaiNC2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="BaiNC3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#BaiNC3"
+            type="button"
+            role="tab"
+            aria-controls="BaiNC3"
+            aria-selected="false"
+          >
+            BaiNC3
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="BaiNC4-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#BaiNC4"
+            type="button"
+            role="tab"
+            aria-controls="BaiNC4"
+            aria-selected="false"
+          >
+            BaiNC4
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <!-- Bài tập 1 -->
+        <div
+          id="Bai1"
+          class="tab-pane fade show active"
+          role="tabpanel"
+          aria-labelledby="Bai1-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Cho người dùng nhập vào 3 số nguyên.Viết chương trình xuất ra 3
+                số theo thứ tự tăng dần
+              </h5>
+              <h6 class="pt-2">
+                Cách làm: Nhận vào 3 số nguyên người dùng nhập và so sánh các số
+                với nhau sau đó sắp xếp theo thứ tự tăng dần
+              </h6>
+            </div>
+            <form class="form row g-3 needs-validation1 pt-4" novalidate>
+              <div class="col-md-4">
+                <label for="number01" class="form-label">Số thứ nhất</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number01"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số nguyên</div>
+              </div>
+              <div class="col-md-4">
+                <label for="number02" class="form-label">Số thứ hai</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number02"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số nguyên</div>
+              </div>
+              <div class="col-md-4">
+                <label for="number03" class="form-label">Số thứ ba</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number03"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số nguyên</div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">
+                  Submit form
+                </button>
+              </div>
+              <h3 class="valueBai1"></h3>
+            </form>
+          </div>
+        </div>
+        <!-- Bài tập 2 -->
+        <div
+          class="tab-pane fade"
+          id="Bai2"
+          role="tabpanel"
+          aria-labelledby="Bai2-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Viết chương trình “Chào hỏi” các thành viên trong gia đình với
+                các đặc điểm. Đầu tiên máy sẽ hỏi ai sử dụng máy. Sau đó dựa vào
+                câu trả lời và đưa ra lời chào phù hợp. Giả sử trong gia đình có
+                4 thành viên: Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)
+              </h5>
+              <h6 class="pt-2"></h6>
+            </div>
+            <div class="mt-4">
+              <h4>Ai đang sử dụng máy này ?</h4>
+              <form class="needs-validation2">
+                <select
+                  id="select-b2"
+                  class="form-select row justify-content-center mt-3 text-center fw-bold"
+                  aria-label="Default select example"
+                >
+                  <option disabled>Ai đang sử dụng máy tính này?</option>
+                  <option value="B" selected>Bố</option>
+                  <option value="M">Mẹ</option>
+                  <option value="A">Anh trai</option>
+                  <option value="E">Em gái</option>
+                </select>
+                <button class="btn btn-primary mt-4">Xác nhận</button>
+                <h4 class="valueBai2 mt-3"></h4>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Bài tập 3 -->
+        <div
+          id="Bai3"
+          class="tab-pane fade"
+          role="tabpanel"
+          aria-labelledby="Bai3-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và
+                bao nhiêu số chẵn.
+              </h5>
+              <h6 class="pt-2">
+                Cách làm:Lấy phần dư của các số nguyên khi chia cho 2
+              </h6>
+            </div>
+            <form
+              id="form-b3"
+              class="form row g-3 needs-validation3 pt-4"
+              novalidate
+            >
+              <div class="col-md-4">
+                <label for="number01" class="form-label">Số thứ nhất</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number01"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số nguyên</div>
+              </div>
+              <div class="col-md-4">
+                <label for="number02" class="form-label">Số thứ hai</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number02"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số nguyên</div>
+              </div>
+              <div class="col-md-4">
+                <label for="number03" class="form-label">Số thứ ba</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number03"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số nguyên</div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Xác nhận</button>
+              </div>
+              <h3 class="valueBai3"></h3>
+            </form>
+          </div>
+        </div>
+        <!-- Bài tập 4 -->
+        <div
+          class="tab-pane fade"
+          id="Bai4"
+          role="tabpanel"
+          aria-labelledby="Bai4-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó
+                là tam giác gì? • Ví dụ: a=2, b=2, c=1 => Tam giác cân • a = 3,
+                b=3 c=3 => Tam giác đều • a = 3, b = 4, c=5 => Tam giác vuông
+                (đinh lý Pytago)
+              </h5>
+              <h6 class="pt-2"></h6>
+            </div>
+            <form
+              id="form-b4"
+              class="form row g-3 needs-validation4 pt-4"
+              novalidate
+            >
+              <div class="col-md-4">
+                <label for="number01" class="form-label">Cạnh thứ nhất</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number01"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập 1 số > 0</div>
+              </div>
+              <div class="col-md-4">
+                <label for="number02" class="form-label">Cạnh thứ hai</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number02"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số > 0</div>
+              </div>
+              <div class="col-md-4">
+                <label for="number03" class="form-label">Cạnh thứ ba</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="number03"
+                  required
+                />
+                <div class="invalid-feedback">Vui lòng nhập số > 0</div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Xác nhận</button>
+              </div>
+              <h3 class="valueBai4"></h3>
+            </form>
+          </div>
+        </div>
+        <!-- Bài nâng cao 1 -->
+        <div
+          class="tab-pane fade"
+          id="BaiNC1"
+          role="tabpanel"
+          aria-labelledby="BaiNC1-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Viết chương trình nhập vào ngày, tháng, năm (Giả sử nhập đúng,
+                không cần kiểm tra hợp lệ). Tìm ngày, tháng, năm của ngày tiếp
+                theo. Tương tự tìm ngày tháng năm của ngày trước đó.
+              </h5>
+              <h6 class="pt-2"></h6>
+            </div>
+            <div class="date__bnc1">
+              <label for="date__bnc1">Chọn ngày tháng năm:</label>
+              <input
+                type="date"
+                id="date__bnc1"
+                name="date"
+                class="date__picker1"
+              />
+              <h4 class="values__bnc1 pt-3"></h4>
+            </div>
+          </div>
+        </div>
+        <!-- Bài nâng cao 2 -->
+        <div
+          class="tab-pane fade"
+          id="BaiNC2"
+          role="tabpanel"
+          aria-labelledby="BaiNC2-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao
+                nhiêu ngày. (bao gồm tháng của năm nhuận).
+              </h5>
+              <h6 class="pt-2"></h6>
+            </div>
+            <div class="date__bnc2">
+              <label for="date__bnc2">Chọn ngày tháng năm:</label>
+              <input
+                type="date"
+                id="date__bnc2"
+                name="date"
+                class="date__picker2"
+              />
+              <h4 class="values__bnc2 pt-3"></h4>
+            </div>
+          </div>
+        </div>
+        <!-- Bài nâng cao 3 -->
+        <div
+          class="tab-pane fade"
+          id="BaiNC3"
+          role="tabpanel"
+          aria-labelledby="BaiNC3-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc
+                nó.
+              </h5>
+              <h6 class="pt-2"></h6>
+            </div>
+            <div>
+              <form
+                class="needs-validation form__bnc3 row justify-content-center flex-wrap"
+              >
+                <label for="input__bnc3 col-12"
+                  >Nhập số nguyên có 3 chữ số</label
+                >
+                <input
+                  id="input__bnc3"
+                  class="input__bnc3 col-6 mt-3"
+                  name="input__bnc3"
+                  type="number"
+                  min="100"
+                  max="999"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="btn btn-primary btn__bnc3 col-2 mt-3"
+                >
+                  Xác nhận
+                </button>
+                <h4 class="values__bnc3 mt-4 col-12"></h4>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Bài nâng cao 4 -->
+        <div
+          class="tab-pane fade"
+          id="BaiNC4"
+          role="tabpanel"
+          aria-labelledby="BaiNC4-tab"
+        >
+          <div class="container-fluid text-center">
+            <div class="head">
+              <div class="h3 pt-5">ĐỀ BÀI</div>
+              <h5 class="pt-2">
+                Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của
+                trường đại học. Viết chương trình in tên sinh viên xa trường
+                nhất
+              </h5>
+              <h6 class="pt-2"></h6>
+            </div>
+            <form
+              class="needs-validation form__bnc4 row justify-content-center flex-wrap"
+            >
+              <div class="pb-4 input__sv1 col-3 border border-primary">
+                <label for="student1__x" class="mt-4"
+                  >Nhập Tọa độ sinh viên 1</label
+                >
+                <input
+                  id="student1__x"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="student1__x"
+                  type="text"
+                  placeholder="Tọa độ X của Sinh viên 1"
+                  required
+                />
+                <input
+                  id="student1__y"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="student1__y"
+                  type="text"
+                  required
+                  placeholder="Tọa độ Y của Sinh viên 1"
+                />
+                <div class="invalid-feedback">
+                  Vui lòng nhập 1 số > hoặc bằng 0
+                </div>
+              </div>
+              <div class="pb-4 input__sv2 col-3 border border-primary">
+                <label for="student2__x" class="mt-4"
+                  >Nhập Tọa độ sinh viên 2</label
+                >
+                <input
+                  id="student2__x"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="student2__x"
+                  type="text"
+                  placeholder="Tọa độ X của Sinh viên 2"
+                  required
+                />
+                <input
+                  id="student2__y"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="student2__y"
+                  type="text"
+                  placeholder="Tọa độ Y của Sinh viên 2"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Vui lòng nhập 1 số > hoặc bằng 0
+                </div>
+              </div>
+              <div class="pb-4 input__sv3 col-3 border border-primary">
+                <label for="student3__x" class="mt-4"
+                  >Nhập Tọa độ sinh viên 3</label
+                >
+                <input
+                  id="student3__x"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="student3__x"
+                  type="text"
+                  placeholder="Tọa độ X của Sinh viên 3"
+                  required
+                />
+                <input
+                  id="student3__y"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="student3__y"
+                  type="text"
+                  placeholder="Tọa độ Y của Sinh viên 3"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Vui lòng nhập 1 số > hoặc bằng 0
+                </div>
+              </div>
+              <div class="pb-4 input__school col-3 border border-primary">
+                <label for="school__x" class="mt-4"
+                  >Nhập Tọa độ trường học</label
+                >
+                <input
+                  id="school__x"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="school__x"
+                  type="text"
+                  placeholder="Tọa độ X Trường (Mặc định 0)"
+                />
+                <input
+                  id="school__y"
+                  class="input__bnc4 col-3 mt-3 form-control"
+                  name="school__y"
+                  type="text"
+                  placeholder="Tọa độ Y Trường (Mặc định 0)"
+                />
+                <div class="invalid-feedback">
+                  Vui lòng nhập 1 số > hoặc bằng 0
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn__bnc4 col-9 mt-4"
+              >
+                Xác nhận
+              </button>
+              <h4 class="values__bnc4 mt-4 col-12"></h4>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./asset/js/formsControl.js"></script>
+    <script src="./asset/js/Bai1.js"></script>
+    <script src="./asset/js/Bai2.js"></script>
+    <script src="./asset/js/Bai3.js"></script>
+    <script src="./asset/js/Bai4.js"></script>
+    <script src="./asset/js/BaiNC1.js"></script>
+    <script src="./asset/js/BaiNC2.js"></script>
+    <script src="./asset/js/BaiNC3.js"></script>
+    <script src="./asset/js/BaiNC4.js"></script>
+  </body>
+</html>
